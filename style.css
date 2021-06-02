@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  text-decoration: none;
+  margin: 0px auto;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  list-style: none;
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+nav .menu {
+  height: auto;
+  margin: 10px;
+}
+nav #logoTop {
+  width: 30%;
+}
+nav #logoTop img {
+  margin-left: 15%;
+}
+nav #bar {
+  width: 70%;
+}
+nav ul {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  color: #1D2C38;
+  text-align: right;
+}
+nav ul li a, nav ul li a:focus, nav ul li a:active {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  color: #FEC71B;
+}
+nav img {
+  width: auto;
+  height: 60px;
+}
+
+#contacto {
+  display: block;
+  border: 3px solid #FEC71B;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#burger {
+  visibility: hidden;
+}
+#burger .mainmenu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 20;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  transition: top 1s ease;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+#burger .mainmenu .closemenu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.mainmenu li {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#logoM {
+  width: 95%;
+}
+#logoM img {
+  margin-left: 9%;
+}
+
+#burgerM {
+  width: 5%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+#burgerM .fas {
+  width: 50px;
+  height: auto;
+  color: #1D2C38;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.wrapper .hero {
+  width: 50%;
+  max-height: 600px;
+  margin-top: 60px;
+  overflow: hidden;
+}
+.wrapper img {
+  width: 100%;
+  height: auto;
+}
+.wrapper #title {
+  display: block;
+  width: 60%;
+  height: auto;
+  margin-top: 15%;
+  margin-left: 15%;
+}
+.wrapper #title h1 {
+  color: #1D2C38;
+  font-size: 50px;
+}
+.wrapper #title button {
+  width: 150px;
+  height: 50px;
+  background-color: #FEC71B;
+  color: #1D2C38;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: none;
+}
+.wrapper #title button a, .wrapper #title button a:focus, .wrapper #title button a:active {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 16px;
+}
+.wrapper #title button:hover {
+  transform: translate(0px, -2px);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.mobile {
+  display: none;
+}
+
+#text {
+  width: 100%;
+  background-color: #fbfbfb;
+  color: #1D2C38;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+p {
+  display: block;
+  width: 75%;
+  max-width: 1400px;
+  height: auto;
+}
+
+h2 {
+  color: #1D2C38;
+  text-align: center;
+}
+
+#srv {
+  width: 100%;
+  background-color: #fbfbfb;
+  padding-bottom: 25px;
+}
+
+.cuerpo {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 250px;
+  height: 180px;
+  border-radius: 10px;
+  border: 2px solid #FEC71B;
+  margin-top: 10px;
+}
+.services h3 {
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+#edif {
+  background-image: url(img/edificaciones.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#plano {
+  background-image: url(img/planos.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#infra {
+  background-image: url(img/infraestructura.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#inst {
+  background-image: url(img/instalaciones.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #1D2C38;
+}
+
+a, a:focus, a:active {
+  text-decoration: none;
+  color: white;
+}
+
+#logoFooter {
+  width: 50%;
+  margin-top: 40px;
+}
+#logoFooter img {
+  margin-left: 15%;
+}
+
+#list {
+  width: 50%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.list {
+  width: 50%;
+}
+.list h3 {
+  color: white;
+}
+.list hr {
+  border: 1px solid #FEC71B;
+  width: 20%;
+  margin-left: 0;
+  margin-top: 5px;
+}
+.list li {
+  margin-top: 10px;
+  color: white;
+}
+.list li a:hover {
+  color: #FEC71B;
+}
+
+.fas {
+  color: #FEC71B;
+  margin-right: 10px;
+}
+
+#end {
+  width: 100%;
+  height: 50px;
+  background-color: #FEC71B;
+}
+
+@media (max-width: 1100px) {
+  #burger {
+    visibility: visible;
+  }
+
+  .wrapper {
+    display: none;
+  }
+
+  .mobile {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(img/concrete-building-dark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .mobile h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    margin-top: 30px;
+  }
+  .mobile hr {
+    width: 50%;
+    border: 2px solid #FEC71B;
+  }
+}
+@media (max-width: 1020px) {
+  .cuerpo {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: ". ." ". .";
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .list {
+    margin-bottom: 20px;
+  }
+
+  #logoFooter {
+    width: 30%;
+  }
+
+  #list {
+    width: 70%;
+  }
+}
+@media (max-width: 650px) {
+  #logoFooter {
+    width: 50%;
+  }
+
+  #list {
+    width: 50%;
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .cuerpo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: "." "." "." ".";
+  }
+
+  .element {
+    display: none;
+  }
+
+  .list {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

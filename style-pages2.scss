@@ -21,7 +21,7 @@ $grey: #fbfbfb;
 //Menu
 nav{
     top: 0;
-    position: fixed;
+    position: sticky;
     width: 100%;
     height: 80px;
     display: flex;
@@ -85,30 +85,7 @@ nav{
 
 //Nav Mobile
 #burger{
-visibility: hidden;
-
-.mainmenu{
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 20;
-    z-index: 10;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    transition: top 1s ease;
-    box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
     display: none;
-}
-
-.mainmenu .closemenu{
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
 }
 
 .mainmenu li{
@@ -333,6 +310,10 @@ footer{
 
 @media (max-width: 1200px){
 
+    .top{
+        display: none;
+    }
+
     .wrapper{
         display: none;
     }
@@ -349,11 +330,37 @@ footer{
     .card1, .card2, .card3, .card4{
         width: 250px;
         height: 400px;
+        
     }
 
 
     #burger{
-        visibility: visible;
+
+        display: flex;
+        position: fixed;
+        z-index: 1;
+
+        .mainmenu{
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 20;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            transition: top 1s ease;
+            box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.25);
+            display: none;
+        }
+        
+        .mainmenu .closemenu{
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
         }
 }
 

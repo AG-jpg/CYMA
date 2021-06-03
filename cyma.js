@@ -16,6 +16,8 @@ $(document).ready(function() {
         mainMenu.style.top = '-100%';
     }
 
+    //Cards
+
     $('.card1').hover(function(){
 
         if($(this).hasClass("active")){

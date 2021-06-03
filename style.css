@@ -369,7 +369,8 @@ a, a:focus, a:active {
     flex-direction: column;
   }
 }
-@media (max-width: 400px) {
+
+@media (max-width: 600px) {
   .cuerpo {
     display: grid;
     grid-template-columns: 1fr;

@@ -160,6 +160,16 @@ nav img {
   width: 32%;
   height: auto;
 }
+.content img {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #FEC71B;
+  border-radius: 15px;
+}
 
 #valores p {
   width: 50%;
@@ -243,6 +253,10 @@ a, a:focus, a:active {
   .content {
     width: 90%;
   }
+
+  #ender {
+    display: none;
+  }
 }
 @media (max-width: 1020px) {
   footer {
@@ -269,6 +283,10 @@ a, a:focus, a:active {
   #list {
     width: 50%;
     flex-direction: column;
+  }
+
+  #valores p {
+    width: 80%;
   }
 }
 

@@ -119,10 +119,15 @@ nav img {
   display: flex;
 }
 .wrapper .hero {
-  width: 50%;
   max-height: 600px;
   margin-top: 60px;
   overflow: hidden;
+}
+.wrapper #title {
+  width: 20%;
+}
+.wrapper #pic {
+  width: 80%;
 }
 .wrapper img {
   width: 100%;
@@ -130,14 +135,14 @@ nav img {
 }
 .wrapper #title {
   display: block;
-  width: 60%;
+  width: 50%;
   height: auto;
-  margin-top: 15%;
-  margin-left: 15%;
+  margin-top: 10%;
+  margin-left: 10%;
 }
 .wrapper #title h1 {
   color: #1D2C38;
-  font-size: 50px;
+  font-size: 40px;
 }
 .wrapper #title button {
   width: 150px;
@@ -210,6 +215,7 @@ h2 {
 .services h3 {
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 #edif {
@@ -235,6 +241,13 @@ h2 {
 
 #inst {
   background-image: url(img/instalaciones.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#inmo {
+  background-image: url(img/inmobiliaria.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -369,7 +382,6 @@ a, a:focus, a:active {
     flex-direction: column;
   }
 }
-
 @media (max-width: 600px) {
   .cuerpo {
     display: grid;
